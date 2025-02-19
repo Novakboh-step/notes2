@@ -21,3 +21,9 @@ class NoteManager:
         i = self.__findNote(id)
         if i != None:
             return self.__list[i].ToString()
+        return None
+
+    def deleteNote(self, id):
+        i = self.__findNote(id)
+        if i != None:
+            self.__list.pop(i)
