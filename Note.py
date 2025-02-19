@@ -12,3 +12,6 @@ class Note:
 
     def setText(self, text):
         self.__text = text
+
+    def ToString(self):
+        return f"{self.__id}) {self.__head}:\n{self.__text}"
